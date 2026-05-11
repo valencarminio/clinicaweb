@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Estudio Jurídico Rosario | Abogados Especialistas en Derecho Civil y Laboral</title>
+    <meta name="description" content="¿Buscás asesoramiento legal en Rosario? Nuestro estudio de abogados ofrece soluciones eficaces en sucesiones, divorcios, accidentes de tránsito y derecho laboral. Consultá hoy.">
+    <meta name="keywords" content="abogados rosario, estudio juridico rosario, sucesiones rosario, divorcios, derecho laboral rosario, accidentes de transito">
+    <link rel="canonical" href="https://tu-dominio.com.ar/">
+
+    <meta property="og:title" content="Estudio Jurídico Rosario | Asesoría Legal Profesional">
+    <meta property="og:description" content="Defendemos tus derechos con experiencia y transparencia. Especialistas en derecho civil, comercial y laboral en Rosario.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-dominio.com.ar/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- VARIABLES DE DISEÑO (Paleta de Colores) --- */
+        :root {
+            --color-primario: #0B1D33;   /* Azul Marino Profundo (Confianza) */
+            --color-secundario: #C5A880; /* Dorado / Arena (Prestigio) */
+            --color-oscuro: #1A1A1A;     /* Negro suave para textos principales */
+            --color-claro: #F8F9FA;      /* Gris ultra claro para fondos */
+            --color-blanco: #FFFFFF;
+            --color-exito: #25D366;      /* Verde WhatsApp */
+            --fuente-titulo: 'Cinzel', serif;
+            --fuente-cuerpo: 'Montserrat', sans-serif;
+        }
+
+        /* --- ESTILOS GENERALES Y RESET --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-cuerpo);
+            color: var(--color-oscuro);
+            line-height: 1.6;
+            background-color: var(--color-blanco);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--fuente-titulo);
+            font-weight: 700;
+            color: var(--color-primario);
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        /* --- HEADER Y NAVEGACIÓN --- */
+        header {
+            background-color: var(--color-primario);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        .logo {
+            color: var(--color-blanco);
+            text-decoration: none;
+            font-family: var(--fuente-titulo);
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--color-secundario);
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: var(--color-blanco);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: var(--color-secundario);
+        }
+
+        /* --- HERO SECTION (Portada) --- */
+        .hero {
+            background: linear-gradient(rgba(11, 29, 51, 0.9), rgba(11, 29, 51, 0.85)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: var(--color-blanco);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            color: var(--color-blanco);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--color-secundario);
+            display: block;
+            font-size: 1.8rem;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .btn-principal {
+            display: inline-block;
+            background-color: var(--color-secundario);
+            color: var(--color-primario);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-principal:hover {
+            background-color: #b5956d;
+            transform: translateY(-2px);
+        }
+
+        /* --- SECCIÓN: QUIÉNES SOMOS --- */
+        .nosotros {
+            background-color: var(--color-claro);
+            text-align: center;
+        }
+
+        .nosotros h2 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .nosotros h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-secundario);
+        }
+
+        .nosotros p {
+            max-width: 800px;
+            margin: 20px auto 0 auto;
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        /* --- SECCIÓN: SERVICIOS (Keyword-Targeted) --- */
+        .servicios h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tarjeta-servicio {
+            background: var(--color-blanco);
+            border: 1px solid #eee;
+            padding: 30px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tarjeta-servicio:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: var(--color-secundario);
+        }
+
+        .tarjeta-servicio h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: var(--color-primario);
+        }
+
+        .tarjeta-servicio p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-servicio a {
+            color: var(--color-secundario);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* --- SECCIÓN: PREGUNTAS FRECUENTES (Estructura FAQ para SEO) --- */
+        .faq {
+            background-color: var(--color-claro);
+        }
+
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--color-blanco);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--color-secundario);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            font-size: 1.05rem;
+            color: var(--color-primario);
+        }
+
+        details p {
+            margin-top: 10px;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* --- SECCIÓN: CONTACTO --- */
+        .contacto h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contacto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .info-contacto h3 {
+            margin-bottom: 15px;
+        }
+
+        .info-contacto p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--color-exito);
+            color: var(--color-blanco);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #1ebe57;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            font-family: var(--fuente-cuerpo);
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--color-primario);
+        }
+
+        button[type="submit"] {
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #122f52;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            border-top: 3px solid var(--color-secundario);
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* --- DISEÑO RESPONSIVO --- */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero h1 span {
+                font-size: 1.4rem;
+            }
+            .contenedor {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#inicio" class="logo">ESTUDIO<span>JURÍDICO</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">El Estudio</a></li>
+                    <li><a href="#servicios">Áreas de Práctica</a></li>
+                    <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Abogados Especialistas en Rosario <span>Defendiendo tus Derechos con Compromiso</span></h1>
+                <p>Brindamos soluciones legales personalizadas en Sucesiones, Divorcios, Accidentes de Tránsito y Derecho Laboral. Tu tranquilidad es nuestra prioridad.</p>
+                <a href="#contacto" class="btn-principal">Iniciá tu Consulta Legal</a>
+            </div>
+        </section>
+
+        <section id="nosotros" class="nosotros">
+            <div class="contenedor">
+                <h2>Trayectoria y Confianza Legal</h2>
+                <p>Somos un estudio jurídico con años de experiencia en la ciudad de Rosario. Nos caracterizamos por brindar una atención personalizada, transparente y orientada a conseguir el mejor resultado para nuestros clientes. Entendemos que cada caso es único y requiere una estrategia legal sólida y dedicada.</p>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <div class="contenedor">
+                <h2>Nuestras Áreas de Práctica</h2>
+                <div class="grid-servicios">
+                    
+                    <article class="tarjeta-servicio">
+                        <h3>Sucesiones y Herencias</h3>
+                        <p>Tramitamos declaratorias de herederos de forma rápida y eficiente en Rosario. Te asesoramos en la partición de bienes y resolución de conflictos familiares.</p>
+                        <a href="#contacto">Consultar por Sucesión →</a>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <h3>Divorcios y Familia</h3>
+                        <p>Divorcios de mutuo acuerdo y unilaterales. Convenios reguladores, cuota alimentaria, régimen de comunicación y división de bienes.</p>
+                        <a href="#contacto">Consultar por Divorcio →</a>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <h3>Accidentes de Tránsito</h3>
+                        <p>Si tuviste un siniestro vial, reclamamos la indemnización que te corresponde ante las compañías de seguro. No cobramos si vos no cobrás.</p>
+                        <a href="#contacto">Reclamar Indemnización →</a>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <h3>Derecho Laboral</h3>
+                        <p>Asesoramiento ante despidos injustificados, trabajo en negro, accidentes laborales (ART), diferencias salariales y acoso laboral.</p>
+                        <a href="#contacto">Consultar a Abogado Laboral →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="preguntas-frecuentes" class="faq">
+            <div class="contenedor">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-container">
+                    
+                    <details>
+                        <summary>¿Cuánto tiempo demora tramitar una sucesión en Rosario?</summary>
+                        <p>El tiempo promedio para obtener la declaratoria de herederos es de 3 a 6 meses, dependiendo de la complejidad del caso, la cantidad de bienes y la documentación disponible de los causantes.</p>
+                    </details>
+
+                    <details>
+                        <summary>¿Qué necesito para iniciar un trámite de divorcio?</summary>
+                        <p>Para iniciar un divorcio solo se requiere la voluntad de uno de los cónyuges. Se debe presentar el acta de matrimonio y las partidas de nacimiento de los hijos en común, en caso de que existan.</p>
+                    </details>
+
+                    <details>
+                        <summary>¿Qué debo hacer inmediatamente después de un accidente de tránsito?</summary>
+                        <p>Es fundamental tomar los datos del otro conductor (nombre, registro, patente y aseguradora), sacar fotos del lugar del hecho y de los daños, y realizar la denuncia policial si hay heridos, o la administrativa en tu seguro dentro de las 72 horas.</p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="contenedor">
+                <h2>Iniciá tu Consulta Legal Hoy</h2>
+                <div class="contacto-grid">
+                    
+                    <div class="info-contacto">
+                        <h3>Contacto Inmediato</h3>
+                        <p>Dejanos tu consulta detallada y un abogado de nuestro equipo se comunicará con vos a la brevedad para evaluar tu caso.</p>
+                        <p><strong>📍 Ubicación:</strong> Microcentro, Rosario, Santa Fe.</p>
+                        <p><strong>🕒 Horario de atención:</strong> Lunes a Viernes de 9:00 a 18:00 hs.</p>
+                        
+                        <a href="https://wa.me/5493410000000?text=Hola,%20quisiera%20hacer%20una%20consulta%20legal" class="whatsapp-link" target="_blank" rel="noopener">
+                            💬 Chatear por WhatsApp
+                        </a>
+                    </div>
+
+                    <div>
+                        <form action="#" method="POST">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                            <input type="email" name="email" placeholder="Correo electrónico" required>
+                            <input type="tel" name="telefono" placeholder="Teléfono de contacto">
+                            <textarea name="mensaje" rows="5" placeholder="Escribí brevemente tu caso (ej: Sucesión, Despido, Accidente...)" required></textarea>
+                            <button type="submit">Enviar Mensaje Profesional</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor" style="padding: 10px 0;">
+            <p>&copy; 2026 Estudio Jurídico Rosario. Todos los derechos reservados.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.6;">La información contenida en este sitio web es de carácter puramente informativo y no constituye asesoramiento legal formal.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
